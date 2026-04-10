@@ -1,0 +1,7 @@
+"$schema" = "https://yazi-rs.github.io/schemas/yazi.json"
+
+[plugin]
+prepend_previewers = [
+  { url = "*.md", run = 'piper -- CLICOLOR_FORCE=1 glow -w=$w -s=dark "$1"' },
+  { url = "*.markdown", run = 'piper -- CLICOLOR_FORCE=1 glow -w=$w -s=dark "$1"' },
+]
